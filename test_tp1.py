@@ -12,7 +12,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from HomePage2 import HomePage
 
 
-def test_open_chrome():
+def open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.amazon.fr/")
@@ -30,7 +30,7 @@ def test_open_chrome():
 
     driver.quit()
 
-def test_css_correction():
+def css_correction():
     driver = webdriver.Chrome()
 
     driver.maximize_window()
@@ -69,7 +69,7 @@ def test_css_correction():
     action.move_to_element(epicerie_salee_menu)
     action.perform()
 
-def test_carrefour():
+def carrefour():
     # Open browser and go to Web page
     driver = webdriver.Chrome()
     action = ActionChains(driver)
