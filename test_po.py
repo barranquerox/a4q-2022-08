@@ -4,8 +4,7 @@ from HomePage import HomePage
 from ProductCategoryPage import ProductCategoryPage
 from ProductPage import ProductPage
 
-
-def test_page_object():
+def page_object():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.carrefour.fr")
